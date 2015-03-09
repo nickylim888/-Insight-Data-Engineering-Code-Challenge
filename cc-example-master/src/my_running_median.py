@@ -17,3 +17,7 @@ for filename in files:
 	    			print wordcount[half]
 	    		else:
 	    			print (wordcount[half-1] + wordcount[half])/2.0
+
+import sys
+sys.stdout = open("wc_output/med_result.txt", "w")
+print "test"

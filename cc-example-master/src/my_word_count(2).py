@@ -20,3 +20,7 @@ c = Counter(words)
 for word, count in c.most_common():
    print word, count
 
+#redirect results to text file
+import sys
+sys.stdout = open("wc_output/wc_result.txt", "w")
+print "test"
